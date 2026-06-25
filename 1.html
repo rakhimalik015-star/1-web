@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="//fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .container{
+            width: 100%;
+            border-bottom:2px solid rgb(162, 162, 166) ;
+        }
+        header{
+            width: 80%;
+            margin: 0px auto;
+            line-height: 75px;
+            z-index: 999;
+        }
+        .d-flex{
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            align-items: center;
+        }
+        .brand-logo h2{
+            font-size: 32px;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            font-weight:500;
+        }
+        .navbar ul li{
+            list-style: none;
+        }
+        .navbar form input{
+            padding: 8px 12px;
+            border: 2px solid rgb(217, 215, 212);
+            border-radius: 50px 0px 0px 50px;
+            border-right: none;
+        }
+        .navbar form button{
+            padding: 10px;
+            border: none;
+            background-color: #f50537;
+            color: white;
+            border-radius: 0px 50px 50px 0px;
+           
+        }
+        .gap-0{
+            gap: 0px;
+        }
+        .navbar form .fa-moon{
+            font-size: 24px;
+        }
+        
+        .image-text h3{
+            font-size: 60px;
+            line: height 70px;
+
+        }
+        .image-text p{
+            font: size 10px;
+        } */
+        .slider{
+            width: 100%;
+        }
+        .slider
+        {
+            height: 800px;
+            background: url('https://p.w3layouts.com/demos_new/template_demo/22-10-2022/cooking-liberty-demo_Free/322220606/web/assets/images/banner1.jpg')
+        }
+        .image-text{
+            text-align: center;
+            color: aliceblue;
+        }
+        .image-text h5{
+            font-size: 28px;
+            line-height: 38px;
+        }
+        .image-text h3{
+            font-size: 60px;
+            line-height: 70px;
+        }
+        .image-text p{
+            font-size: 19px;
+        }
+        /* .overlay{
+            width: 100%;
+            height: 800px;
+            background-color: rgba(0, 0, 0, 0.189);
+            position: absolute;
+            z-index: -9;
+        } */
+        .image-text button{
+            padding:10px 35px;
+            font-size: 16px;
+            color:#fff;
+            outline: none;
+            border: 2px solid #f50537;
+            border-radius: 30px;
+            background-color: #f50537;
+            font-weight: 600;
+        }
+        .container{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-famuily:'Ubuntu', sans-serif;
+            text-align: center;
+        }
+        .d-flex{
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            align-items: center;
+        }
+        .text{
+            padding-top: 5%;
+            padding-left: 20%;
+            font-size:20px;
+            text-align: left;
+            line-height: 45px;
+            width:80%;
+            text-align: center;
+            gap: 5%;
+        }
+        
+        .learn h5{
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .icon{
+        
+            font-family: 'Ubuntu';
+        }
+
+        .Manual button{
+            background:#f50537 ;
+            color: #f8f6f6;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            line-height: 60px;
+            text-align: center;
+            border:none;
+            font-size:28px;
+        }
+        .Manual h4{
+            line-height: 32px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .Manual p{
+            font-size:16px;
+            line-height: 28px;
+            color: #707070;
+        }
+        .Everyone button{
+            background:#f50537 ;
+            color: #f8f6f6;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            line-height: 60px;
+            text-align: center;
+            border:none;
+            font-size:28px;
+        }
+        .Everyone h4{
+            line-height: 32px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .Everyone p{
+            font-size:16px;
+            line-height: 28px;
+            color: #707070;
+        }        
+        .images{
+           border:none;
+           padding-top: 5%;
+           padding-right: 0%;
+        }
+        .images .manpic .pic img{
+            border-radius: 2px;
+            width:400px;
+        }
+        .container{
+            width:100%;
+            height:60%;
+        }
+        .container .course h5{
+            text-align: center;
+            color:#f50537;
+            font-weight: 8px;
+            line-height: 1.2;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .container .course h3{
+            font-family: 'Ubuntu', sans-serif;
+            color: black;
+        }
+        .d-flex{
+            display: flex;
+            width:80%;
+            align-items: center;
+        }
+        .container .image-conatiner{
+            border-color: blue;
+            width:100%
+
+        }
+        .image-conatiner{
+            border-radius: 40%;
+        }
+        .view-course{
+            text-align: center;
+            padding-top: 40px;
+            font-family: font-family: 'Ubuntu', sans-serif;;
+        }
+        .view-course button{
+            border: none;
+            border-radius: 20px;
+            color:white;
+            background-color: #f50537;
+            line-height: 1,8;
+            width: 30%;
+            font-weight:600;
+            font-size: 25px;
+        }
+        /* .container .course .link1 button{
+            width: 100%;
+            height: 800px;
+            background-position: center;
+            background-size:cover;
+            background-image:url('https://p.w3layouts.com/demos_new/template_demo/22-10-2022/cooking-liberty-demo_Free/322220606/web/assets/images/c1.jpg'); */
+        .
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="d-flex">
+                <div class="brand-logo">
+                    <h2>Cooking<i class="fas fa-bread-slice ms-1"></i></h2>
+                </div>
+                <div class="navbar d-flex">
+                    <nav>
+                        <ul class="d-flex">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Class</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">pages</a></li>
+                        </ul>
+                    </nav>
+                    <form class="d-flex gap-0">
+                        <input type="search" name="" id="" placeholder="Enter keywords...">
+                        <button><i class="fas fa-search"></i></button>
+                        <i class="fa-regular fa-moon"></i>
+                    </form>
+                </div>
+        </header>
+    </div>
+    <div class="slider d-flex">
+        <!-- <div class="overlay"></div> -->
+        <div class="image-text">
+        <h5>Cooking is Easy</h5>
+        <h3>Passion For Cooking</h3>
+        <p>Helping You To Be Chef at Your Own House</p>
+        <button>Learn More</button>
+        </div>
+    </div>
+    <div class="continer d-flex">
+        <div class="content">
+            <div class="text">
+                <div class="learn "><h2>Learn how to cook from your house</h2>
+                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur. Mumquam eius modi tempora incidunt ut labore et.</p>
+                </div>
+                <div class="icon d-flex">
+                <div class="Manual">
+                    <button class="bg-primary"><i class="fas fa-utensils"></i></button>
+                    <h4>Easy Manual</h4>
+                    <p>Sed ut perspiciatis unde omnis iste natus.</p>
+                
+                </div>
+                <div class="Everyone">
+                    <button><i class="fas fa-bread-slice"></i></button>
+                    <h4>For Everyone</h4>
+                    <p>Sed ut perspiciatis unde omnis iste natus.</p>
+                </div>
+                </div>
+            </div>    
+        </div>
+        <div class="images d-flex">
+            <div class="manpic d-flex">
+                <div class="pic">
+                    <img src="https://p.w3layouts.com/demos_new/template_demo/22-10-2022/cooking-liberty-demo_Free/322220606/web/assets/images/about1.jpg" alt="" class="img-fluid radius-image"width=400px>
+                </div>           
+                <div class="pic">
+                    <img src="https://p.w3layouts.com/demos_new/template_demo/22-10-2022/cooking-liberty-demo_Free/322220606/web/assets/images/about2.jpg " alt="" class="img-fluid radius-image" width="400">
+                </div>    
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="course">
+           <h5>Our Cooking Classes</h5>
+           <h3 class="title-style text-center">Popular Courses</h3>
+        </div>
+        <div class="link1">
+            <button>Beginer</button>
+            <button>New</button>
+        </div>
+        <div class="image-container d-flex">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/22-10-2022/cooking-liberty-demo_Free/322220606/web/assets/images/c1.jpg">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/22-10-2022/cooking-liberty-demo_Free/322220606/web/assets/images/c2.jpg">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/22-10-2022/cooking-liberty-demo_Free/322220606/web/assets/images/c3.jpg">
+        </div>
+        
+        <!-- <div class="course2">
+            <button>Coaching</button>
+            <button>Replace</button>
+        </div>
+        <div class="course3">
+           <button>Free</button>
+           <button>New</button>
+        </div>
+        <div class="botton">
+            <button>View all course</button>
+        </div> -->
+    </div>
+    <div class="view-course">
+        <button>View all couse</button>
+    </div>
+    <div class="container d-flex">
+        <div class="pic">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/22-10-2022/cooking-liberty-demo_Free/322220606/web/assets/images/about.jpg" width="600px"height=800px>
+        </div>
+        <div class="Reason ">
+            <div class="headind">
+            <h5 class="sub-title">Our Features</h5>
+            </div>
+            <div>
+                <h2 class="title-style mb-4">Why Choose Us?</h2>
+                <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            
+            <div class="prize d-flex">
+                <div class="icon ">
+                <i class="fas fa-trophy"></i>
+                </div>
+                <div claass="content"><h4>We Are Winners of 50   Competitions</h4>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia desemollit.</p>
+                </div>
+            </div>
+            <div class="trainers d-flex">
+                <div class="icon"><i class="fas fa-user-friends"></i>
+                </div>
+
+                <div class="text">
+                    <h4>27 Professional Chefs-Trainers</h4>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit.</p>
+                </div>
+            </div>
+            <div class="guarante d-flex">
+                <duv><i class="fas fa-hourglass-half"></i>
+                </duv>
+                <div>
+                <h4>Guaranteed Fast Employment</h4>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit.</p>
+                </div>            
+            </div>
+        </div>
+    </div>
+    <div class="bestchef">
+        <div class="text">
+            <h5 class="sub-title text-center">Team of Professionals</h5>
+            <h3 class="title-style text-center">Our Best Chefs</h3>
+        </div>
+        <div class="chef d-flex">
+            <div class="1chef">
+               <img src="https://p.w3layouts.com/demos_new/template_demo/22-10-2022/cooking-liberty-demo_Free/322220606/web/assets/images/team1.jpg"width=300px>
+               <div class="link">
+                
+               </div>
+            </div>
+            <div class="2chef">
+               <img src="https://p.w3layouts.com/demos_new/template_demo/22-10-2022/cooking-liberty-demo_Free/322220606/web/assets/images/team2.jpg"width=300px>
+            </div>
+            <div class="3chef">
+                <img src="https://p.w3layouts.com/demos_new/template_demo/22-10-2022/cooking-liberty-demo_Free/322220606/web/assets/images/team3.jpg"width=300px>
+            </div>
+                
+            
+
+        </div>>
+
+    </div>
+    <div> <div class="cookies d-flex">
+        <!-- <div class="overlay"></div> -->
+        <div class="image-text">
+        <h3>Join Our Cooking Class, Become a Chef</h3>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sunt in culpa qui officia sed deserunt mollit anim id est laborum mollit anim id est nulla.</p>
+        <button>Register free</button>
+        </div>
+    
+</body>
+</html>
