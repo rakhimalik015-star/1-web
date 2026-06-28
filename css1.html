@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="//fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .container {
+            width: 100%;
+           
+            position: fixed;
+        }
+
+        header {
+           
+            width: 100%;
+            margin: 0px auto;
+            line-height: 75px;
+            z-index: 999;
+        }
+
+        .d-flex {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .brand-logo h2 {
+            color: white;
+            font-size: 32px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            font-weight: 500;
+        }
+
+        .navbar ul li {
+            list-style: none;
+        }
+
+        .navbar form input {
+            padding: 8px 12px;
+            border: 2px solid rgb(217, 215, 212);
+            border-radius: 50px 0px 0px 50px;
+            border-right: none;
+        }
+
+        .navbar form button {
+            padding: 10px;
+            border: none;
+            background-color: #f50537;
+            color: white;
+            border-radius: 0px 50px 50px 0px;
+
+        }
+        .navbar home{
+            color: #f50537;
+        }
+
+        .gap-0 {
+            gap: 0px;
+        }
+
+        .navbar form .fa-moon {
+            font-size: 24px;
+        }
+
+        .image-text h3 {
+            font-size: 60px;
+            line: height 70px;
+
+        }
+
+        .image-text p {
+            font: size 10px;
+        }
+
+        */ .slider {
+            width: 100%;
+        }
+
+        .slider {
+            height: 800px;
+            background: url('https://p.w3layouts.com/demos_new/template_demo/22-10-2022/cooking-liberty-demo_Free/322220606/web/assets/images/banner1.jpg')
+        }
+
+        .image-text {
+            text-align: center;
+            color: aliceblue;
+        }
+
+        .image-text h5 {
+            font-size: 28px;
+            line-height: 38px;
+        }
+
+        .image-text h3 {
+            font-size: 60px;
+            line-height: 70px;
+        }
+
+        .image-text p {
+            font-size: 19px;
+        }
+
+        /* .overlay{
+            width: 100%;
+            height: 800px;
+            background-color: rgba(0, 0, 0, 0.189);
+            position: absolute;
+            z-index: -9;
+        } */
+        .image-text button {
+            padding: 10px 35px;
+            font-size: 16px;
+            color: #fff;
+            outline: none;
+            border: 2px solid #f50537;
+            border-radius: 30px;
+            background-color: #f50537;
+            font-weight: 600;
+        }
+
+        .container {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-famuily: 'Ubuntu', sans-serif;
+            text-align: center;
+        }
+
+        .d-flex {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .text {
+            padding-top: 5%;
+            padding-left: 20%;
+            font-size: 20px;
+            text-align: left;
+            line-height: 45px;
+            width: 80%;
+            text-align: center;
+            gap: 5%;
+        }
+
+        .learn h5 {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .icon {
+
+            font-family: 'Ubuntu';
+        }
+
+        .Manual button {
+            background: #f50537;
+            color: #f8f6f6;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            line-height: 60px;
+            text-align: center;
+            border: none;
+            font-size: 28px;
+        }
+
+        .Manual h4 {
+            line-height: 32px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .Manual p {
+            font-size: 16px;
+            line-height: 28px;
+            color: #707070;
+        }
+
+        .Everyone button {
+            background: #f50537;
+            color: #f8f6f6;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            line-height: 60px;
+            text-align: center;
+            border: none;
+            font-size: 28px;
+        }
+
+        .Everyone h4 {
+            line-height: 32px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .Everyone p {
+            font-size: 16px;
+            line-height: 28px;
+            color: #707070;
+        }
+
+        .images {
+            border: none;
+            padding-top: 5%;
+            padding-right: 0%;
+        }
+
+        .images .manpic .pic img {
+            border-radius: 2px;
+            width: 400px;
+        }
+
+        .box {
+            padding: 48px 0px;
+            color: #ca4d4d;
+        }
+
+        .op {
+            text-align: center;
+        }
+
+        .op h5 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: #f50537;
+        }
+
+        .op h2 {
+            font-size: 28px;
+            line-height: 40px;
+            color: green;
+        }
+
+        card {
+            background-color: #707070;
+            justify-content: center;
+            margin-left: 24px;
+            padding: 5px;
+        }
+
+        .d-flex {
+            justify-content: center;
+        }
+
+        .course-cards {
+            padding: 50px;
+        }
+
+        .card1 {
+            width: 374px;
+            border: 0px solid;
+            border-color: none;
+            border-radius: 5px;
+        }
+
+        .part1 {
+
+            width: 100%;
+            height: 320px;
+
+        }
+
+        .part1 {
+            width: 100%;
+            word-break: break-word;
+            background-image: url('https://p.w3layouts.com/demos_new/template_demo/22-10-2022/cooking-liberty-demo_Free/322220606/web/assets/images/c1.jpg');
+
+
+        }
+
+        .bn {
+            padding: 10px;
+
+        }
+
+        .part1 .beginner {
+            height: 20px;
+            width: 70px;
+            background-color: red;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .part1 .new {
+            height: 20px;
+            width: 60px;
+            margin: 5px;
+            padding: 2px;
+            background-color: green;
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .subtittle {
+            padding: 20px;
+            word-wrap: break-word;
+            background-color: whitesmoke;
+        }
+
+        .subtittle .text-price p {
+            color: red;
+        }
+
+        .subtittle .text-price ul {
+            color: gold;
+        }
+
+        .subtittle .link {
+            margin: 15px 0px 0px;
+        }
+
+        .subtittle .link a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .icon-enrol {
+            margin: 24px 0px 0px;
+        }
+
+        .users {
+            color: red;
+        }
+
+        .student {
+            color: black;
+        }
+
+        .card2 {
+            width: 374px;
+
+        }
+
+        .part2 {
+
+            width: 100%;
+            height: 320px;
+        }
+
+        .part2 {
+            width: 100%;
+            word-break: break-word;
+            background-image: url('https://p.w3layouts.com/demos_new/template_demo/22-10-2022/cooking-liberty-demo_Free/322220606/web/assets/images/c2.jpg');
+        }
+
+        .cr {
+            padding: 10px;
+        }
+
+        .part2 .cooking {
+            height: 20px;
+            width: 70px;
+            background-color: red;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .replace {
+            height: 20px;
+            width: 60px;
+            margin: 5px;
+            padding: 2px;
+            background-color: green;
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .card3 {
+            width: 374px;
+
+        }
+
+        .part3 {
+
+            width: 100%;
+            height: 320px;
+        }
+
+        .part3 {
+            width: 100%;
+            word-break: break-word;
+            background-image: url('https://p.w3layouts.com/demos_new/template_demo/22-10-2022/cooking-liberty-demo_Free/322220606/web/assets/images/c3.jpg');
+        }
+
+        .bf {
+            padding: 10px;
+        }
+
+        .part3 .beginner {
+            height: 20px;
+            width: 70px;
+            background-color: red;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .free {
+            height: 20px;
+            width: 60px;
+            margin: 5px;
+            padding: 2px;
+            background-color: green;
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .vc {
+
+            text-align: center;
+        }
+
+        .vac {
+            padding: 15px 40px;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            background-color: #f50537;
+        }
+
+        section .fourth-slde {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .it {
+            
+        }
+
+        .it .c-pic img {
+            width: 60%;
+            overflow-clip-margin: content-box;
+            margin-left: 100px;
+        }
+
+        .it {
+            
+            width: 100%;
+        }
+
+        .reason {
+            width:50%;
+            margin: 40px;
+        }
+        .reason h5{
+            color:#f50537;
+        }
+        .ti{
+            color: white;
+            font-size: 30px;
+            background-color: #f50537;
+            
+            border: none;
+            border-radius: 100px;
+        }
+        .ut{
+            color: white;
+            background-color: #f50537;
+            
+            font-size: 30px;
+            border-radius: 100px;
+    
+        }
+        .trophy{
+            padding: 10px;
+        }
+        .people{
+            padding: 10px;
+        }
+        .ht{
+            color: white;
+            font-size: 30px;
+            background-color:#f50537;
+            border: none;
+            border-radius: 100px;
+        }
+        .time{
+            padding: 10px;
+        }
+        .ot{
+            padding: 5%;
+            text-align: center;
+        }
+        .ot h5{
+            color: #f50537;
+        } 
+        .ot h2{
+            padding: 2px;
+        }
+        .chef{
+            
+            border-radius: 20px;
+            
+        }
+        .chef1{
+            
+            background-image:url('https://p.w3layouts.com/demos_new/template_demo/22-10-2022/cooking-liberty-demo_Free/322220606/web/assets/images/team1.jpg');
+            height: 300px;
+            width: 400px;
+            border-radius: 20px 20px 40px 0px;
+        }
+        .subtittle1{
+            line-height: 80px;
+            border: solid 1px;
+            border-color: antiquewhite;
+            border-radius: 0px 0px 40px 40px;
+        }
+        .subtittle1 {
+            justify-items: center;
+        }
+         .subtittle1 h5{
+            color: #707070;
+         }
+         .chef{
+            height: 100px;
+            border-radius: 20px;
+            
+        }
+        .chef2{
+            word-wrap: break-word;
+            background-image:url('https://p.w3layouts.com/demos_new/template_demo/22-10-2022/cooking-liberty-demo_Free/322220606/web/assets/images/team2.jpg');
+            height: 300px;
+            width: 400px;
+            border-radius: 20px 20px 40px 0px;
+        }
+        .chef{
+            
+            border-radius: 20px;
+            
+        }
+        .chef3{
+            word-wrap: break-word;
+            background-image:url('https://p.w3layouts.com/demos_new/template_demo/22-10-2022/cooking-liberty-demo_Free/322220606/web/assets/images/team3.jpg');
+            height: 300px;
+            width: 400px;
+            border-radius: 20px 20px 50px 0px;
+        }
+        */slider1{
+            width: 100%;
+        }
+        .slider1 {
+            height: 800px;
+            background: url('https://p.w3layouts.com/demos_new/template_demo/22-10-2022/cooking-liberty-demo_Free/322220606/web/assets/images/bg3.jpg');
+        } 
+        .text-image {
+            line-height: 80px;
+            text-align: center;
+            color: black;
+        }
+
+        .text-image h1 {
+            font-size: 28px;
+            line-height: 38px;
+        }
+
+        
+        .text-image p {
+            font-size: 19px;
+        }
+        .text-image button{
+            background-color: #ca4d4d;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 40px;
+            width: 20%;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="d-flex">
+            <div class="brand-logo">
+                <h2>Cooking<i class="fas fa-bread-slice ms-1"></i></h2>
+            </div>
+            <div class="navbar d-flex">
+                <nav>
+                    <ul class="d-flex">
+                        <li class="home"><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Class</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">pages</a></li>
+                    </ul>
+                </nav>
+                <form class="d-flex gap-0">
+                    <input type="search" name="" id="" placeholder="Enter keywords...">
+                    <button><i class="fas fa-search"></i></button>
+                    <i class="fa-regular fa-moon"></i>
+                </form>
+            </div>
+        </header>
+    </div>
+    <div class="slider d-flex">
+        <!-- <div class="overlay"></div> -->
+        <div class="image-text">
+            <h5>Cooking is Easy</h5>
+            <h3>Passion For Cooking</h3>
+            <p>Helping You To Be Chef at Your Own House</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+    <div class="continer d-flex">
+        <div class="content">
+            <div class="text">
+                <div class="learn ">
+                    <h2>Learn how to cook from your house</h2>
+                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur. Mumquam eius modi
+                        tempora incidunt ut labore et.</p>
+                </div>
+                <div class="icon d-flex">
+                    <div class="Manual">
+                        <button class="bg-primary"><i class="fas fa-utensils"></i></button>
+                        <h4>Easy Manual</h4>
+                        <p>Sed ut perspiciatis unde omnis iste natus.</p>
+
+                    </div>
+                    <div class="Everyone">
+                        <button><i class="fas fa-bread-slice"></i></button>
+                        <h4>For Everyone</h4>
+                        <p>Sed ut perspiciatis unde omnis iste natus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="images d-flex">
+            <div class="manpic d-flex">
+                <div class="pic">
+                    <img src="https://p.w3layouts.com/demos_new/template_demo/22-10-2022/cooking-liberty-demo_Free/322220606/web/assets/images/about1.jpg"
+                        alt="" class="img-fluid radius-image" width=400px>
+                </div>
+                <div class="pic">
+                    <img src="https://p.w3layouts.com/demos_new/template_demo/22-10-2022/cooking-liberty-demo_Free/322220606/web/assets/images/about2.jpg "
+                        alt="" class="img-fluid radius-image" width="400">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="box">
+            <div class="op">
+                <h5>Our Cooking Classes</h5>
+                <h2>Popular Course</h2>
+            </div>
+            <card>
+                <div class="">
+                    <div class="course-cards d-flex">
+                        <div class="card1">
+                            <div class="part1">
+                                <div class="bn"><button class="beginner">Begginer</button>
+                                    <button class="new">New</button>
+                                </div>
+                            </div>
+                            <div class="subtittle">
+                                <div class="text-price d-flex">
+                                    <p class="price">$53.00</p>
+                                    <ul class="rating-star">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star-o"></span>
+                                    </ul>
+                                </div>
+                                <div class="link">
+                                    <a href="">How to make singapore chicken rise at home</a>
+                                </div>
+                                <div class="icon-enrol">
+                                    <div class="pepole">
+                                        <span class="users"><i class="fa fa-users"></i></span>
+                                        <span class="student">68 Students Enrolled</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="part2">
+                                <div class="cr"><button class="cooking">Cooking</button>
+                                    <button class="replace">Replace</button>
+                                </div>
+                            </div>
+                            <div class="subtittle">
+                                <div class="text-price d-flex">
+                                    <p class="price">$70.00</p>
+                                    <ul class="rating-star">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star-o"></span>
+                                    </ul>
+                                </div>
+                                <div class="link">
+                                    <a href="">Make a delicious vegan burger at home</a>
+                                </div>
+                                <div class="icon-enrol">
+                                    <div class="pepole">
+                                        <span class="users"><i class="fa fa-users"></i></span>
+                                        <span class="student">48 Students Enrolled</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card3">
+                            <div class="part3">
+                                <div class="bf"><button class="beginner">Beginner</button>
+                                    <button class="free">Free</button>
+                                </div>
+                            </div>
+                            <div class="subtittle">
+                                <div class="text-price d-flex">
+                                    <p class="price">$69.00</p>
+                                    <ul class="rating-star">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star-o"></span>
+                                    </ul>
+                                </div>
+                                <div class="link">
+                                    <a href="">How to make simple delicious noodles</a>
+                                </div>
+                                <div class="icon-enrol">
+                                    <div class="pepole">
+                                        <span class="users"><i class="fa fa-users"></i></span>
+                                        <span class="student">74 Students Enrolled</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc"><button class="vac">View all course</button></div>
+                </div>
+            </card>
+        </div>
+
+        <section class="fourth-slide">
+            <div class=" it d-flex">
+                <div class="c-pic">
+                    <img src="https://p.w3layouts.com/demos_new/template_demo/22-10-2022/cooking-liberty-demo_Free/322220606/web/assets/images/about.jpg">
+                </div>
+
+
+                <div class="reason">
+                    
+                    <h5>Our Features</h5>
+                    <h3>Why Choose Us?</h3>
+                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                        tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        
+                    <div class=" tri d-flex">
+                        <div class="ti"><i class=" trophy fas fa-trophy"></i></div>
+            
+                    <div>
+                        <h4>We Are Winners of 50 Competitions</h4>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
+                        </p>
+                    </div>
+                    </div>
+            
+                <div class=" d-flex">
+                    <div class="ut"><i class="people fas fa-user-friends"></i></div>
+                    <div>
+                        <h4>27 Professional Chefs-Trainers</h4>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
+                        </p>
+                    </div>
+                </div>
+                <div class=" d-flex">
+                    <div class="ht"><i class="time fas fa-hourglass-half"></i></div>
+                    
+                    <div>
+                        <h4>Guaranteed Fast Employment</h4>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
+                        </p>
+                    </div>
+                </div>    
+            
+                </div>
+            </div>
+        </section>
+        <div>
+            <div class="ot">
+                <h5>Team of Professionals</h5>
+                <h2>Our Best Chefs</h2>
+            </div>
+            <card>
+                <div class="">
+                    <div class="pic-card d-flex">
+                        <div class="chef d-flex">
+                            <div>
+                            <div class="chef1">
+                               <img>
+                            </div>
+                            <div class="subtittle1">
+                                <h2>Olive Yew</h2>
+                                <h5>MASTERCHEF
+                                </h5>
+                                
+                            </div>
+                            </div>
+                            <div>
+                            <div class="chef2">
+                               <img>
+                            </div>
+                            <div class="subtittle1">
+                                <h2>Aida Joe</h2>
+                                <h5>MASTERCHEF</h5>
+                                
+                                
+                            </div>
+                            </div>
+                            <div>
+                             <div class="chef3">
+                               <img>
+                            </div>
+                            <div class="subtittle1">
+                                <h2>Teri Dack</h2>
+                                <h5>MASTERCHEF</h5>
+                            </div>
+                            </div>
+                        </div>
+
+                    </div>
+            
+                </div>
+            </card>
+        </div>
+
+
+     <div class="slider1 d-flex">
+        
+        <div class="text-image">
+            <h1>Join Our Cooking Class, Become a Chef</h1>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sunt in culpa qui officia sed deserunt mollit anim id est laborum mollit anim id est nulla.</p>
+            <button>Register Now</button>
+        </div>
+    </div>
+</body>
+
+</html>
